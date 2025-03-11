@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 4cebab2d6e60464409ca41f73445db7d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - HeatmapLookUpTable: {fileID: 2800000, guid: 2874df59562514e4baf6fc7d37f781db, type: 2}
+  - HeatmapOverlayMaterialTemplate: {fileID: 2100000, guid: d8164c2e2a4203340b76c0bd4a8aaedc, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
