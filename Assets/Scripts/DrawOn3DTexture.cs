@@ -122,7 +122,7 @@ namespace Microsoft.MixedReality.Toolkit.SampleGazeData
                 RaycastHit hit;
                 if (UnityEngine.Physics.Raycast(ray, out hit) && hit.collider.gameObject == gameObject)
                 {
-                    Debug.Log("Raycast hit at world position: " + hit.point);
+                    //Debug.Log("Raycast hit at world position: " + hit.point);
 
                     MeshCollider meshCollider = hit.collider as MeshCollider;
                     if (meshCollider != null && meshCollider.sharedMesh != null)
@@ -130,25 +130,25 @@ namespace Microsoft.MixedReality.Toolkit.SampleGazeData
                         Vector2[] meshUVs = meshCollider.sharedMesh.uv;
                         if (meshUVs != null && meshUVs.Length > 0)
                         {
-                            Debug.Log("First UV coordinate in mesh: " + meshUVs[0]);
+                            //Debug.Log("First UV coordinate in mesh: " + meshUVs[0]);
                         }
 
                         Vector2 hitUV = hit.textureCoord;
-                        Debug.Log("Hit UV from MeshCollider: " + hitUV);
+                        //Debug.Log("Hit UV from MeshCollider: " + hitUV);
                         StartCoroutine(DrawAt(hitUV));
                     }
                     else
                     {
-                        Debug.Log("MeshCollider not found or missing sharedMesh");
+                        //Debug.Log("MeshCollider not found or missing sharedMesh");
                         Vector2? hitPosUV = GetCursorPosInTexture(hitPosition);
                         if (hitPosUV != null)
                         {
-                            Debug.Log("Fallback UV: " + hitPosUV);
+                            //Debug.Log("Fallback UV: " + hitPosUV);
                             StartCoroutine(DrawAt(hitPosUV.Value));
                         }
                         else
                         {
-                            Debug.Log("Could not compute UV coordinates using fallback.");
+                            //Debug.Log("Could not compute UV coordinates using fallback.");
                         }
                     }
                 }
@@ -158,7 +158,7 @@ namespace Microsoft.MixedReality.Toolkit.SampleGazeData
                 Vector2? hitPosUV = GetCursorPosInTexture(hitPosition);
                 if (hitPosUV != null)
                 {
-                    Debug.Log("Hit UV: " + hitPosUV);
+                    //Debug.Log("Hit UV: " + hitPosUV);
                     StartCoroutine(DrawAt(hitPosUV.Value));
                 }
             }
@@ -300,7 +300,7 @@ namespace Microsoft.MixedReality.Toolkit.SampleGazeData
             }
         }
 
-        private Texture2D MyDrawTexture
+        public Texture2D MyDrawTexture
         {
             get
             {
