@@ -1,5 +1,19 @@
 # Sample Project for Gaze Data Collection
 
+## Checklist
+
+:white_check_mark: Build a demo scene
+
+:white_check_mark: Collect gaze data (mouse input), Object transformations & export to csv, point cloud - [Demo Video](https://drive.google.com/file/d/1Edbv7P_Gu9Oe8DqdgrTcawvuWrME-s18/view?usp=sharing)
+
+:white_large_square: Modify the User Input to work with HoloLens 2 & HoloLens 2 Emulator
+
+:white_large_square: Clean and Combine All Code *will be done in a new repository*
+
+## Roadmap
+
+![roadmap](/archive/roadmap.png)
+
 ## Using Unity 2022.3 LTS, MRTK 2.8 & OpenXR 1.11.2
 
 [**Demo video**](https://drive.google.com/file/d/1gRNhuo0GHouzpT--2aifzOa4ZugmQlQy/view?usp=drive_link)
